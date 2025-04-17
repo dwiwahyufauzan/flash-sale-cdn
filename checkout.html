@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+<!--banner-->
+<div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+  <div class="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+    <div class="aspect-577/310 w-[36.0625rem] bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+  </div>
+  <div class="absolute top-1/2 left-[max(45rem,calc(50%+8rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+    <div class="aspect-577/310 w-[36.0625rem] bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+  </div>
+  <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+    <p class="text-sm/6 text-gray-900">
+      <strong class="font-semibold">HURRY! FLASH SALE IS HERE!</strong><svg viewBox="0 0 2 2" class="mx-2 inline size-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Up to 70% OFF!
+      Limited stock, limited time!
+    </p>
+    <a href="register.html" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
+  </div>
+  <div class="flex flex-1 justify-end">
+    <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+      <span class="sr-only">Dismiss</span>
+      <svg class="size-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+      </svg>
+    </button>
+  </div>
+</div>
+<!--end banner-->
+
+<!--header-->
+<header class="relative isolate overflow-hidden bg-gray-900">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-1">
+      <a href="index.html" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company Logo">
+        </a>          
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+      <a href="index.html" class="text-sm/6 font-semibold text-white">Home</a>
+      <a href="product.html" class="text-sm/6 font-semibold text-white">Product</a>
+      <a href="cart.html" class="text-sm/6 font-semibold text-white">Cart</a>
+      <a href="checkout.html" class="text-sm/6 font-semibold text-blue-400">Checkout</a>
+      <a href="shoppng-history.html" class="text-sm/6 font-semibold text-white">Shopping history</a>
+    </div>
+    <div class="flex flex-1 items-center justify-end gap-x-6">
+      <a href="login.html" class="hidden text-sm/6 font-semibold text-white lg:block">Log in</a>
+      <a href="register.html" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign up</a>
+    </div>
+    <div class="flex lg:hidden">
+      <!-- Button to open menu -->
+      <label for="menu-toggle" class="cursor-pointer p-2 text-gray-700 bg-gray-800 rounded-md">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </label>
+    </div>
+  </nav>
+
+  <!-- Mobile menu with enhanced styles and smoother transitions -->
+  <input type="checkbox" id="menu-toggle" class="peer hidden" />
+  <div class="fixed inset-0 z-10 bg-black/50 peer-checked:block hidden transition-opacity duration-300"></div>
+  
+  <div class="fixed inset-y-0 right-0 z-20 w-64 max-w-full bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out">
+    <div class="flex items-center gap-x-6">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">Your Company</span>
+        <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
+      </a>
+      <a href="register.html" class="ml-auto rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign up</a>
+      <label for="menu-toggle" class="-m-2.5 rounded-md p-2.5 text-gray-700 cursor-pointer">
+        <span class="sr-only">Close menu</span>
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </label>
+    </div>
+    <div class="mt-6 flow-root">
+      <div class="-my-6 divide-y divide-gray-500/10">
+        <div class="space-y-2 py-6">
+          <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+          <a href="product.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+          <a href="cart.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Cart</a>
+          <a href="checkout.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Checkout</a>
+          <a href="shoppng-history.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Shopping History</a>
+        </div>
+        <div class="py-6">
+          <a href="login.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>   
+<!--end header-->
+
+<!--form chechout-->
+<div class="bg-gray-50">
+  <div class="mx-auto max-w-2xl px-4 pt-16 pb-24 sm:px-6 lg:max-w-7xl lg:px-16">
+    <div class="max-w-xl mb-8">
+      <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Check-Out</h1>
+      <p class="mt-2 text-sm text-gray-500">Enter your shipping details, choose a payment method, and complete your purchase.</p>
+    </div>
+    <form class="lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16">
+      <div>
+        <div>
+          <h2 class="text-lg font-medium text-gray-900">Contact information</h2>
+
+          <div class="mt-4">
+            <label for="email-address" class="block text-sm/6 font-medium text-gray-700">Email address</label>
+            <div class="mt-2">
+              <input type="email" id="email-address" name="email-address" autocomplete="email" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 border-t border-gray-200 pt-10">
+          <h2 class="text-lg font-medium text-gray-900">Shipping information</h2>
+
+          <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+            <div>
+              <label for="first-name" class="block text-sm/6 font-medium text-gray-700">First name</label>
+              <div class="mt-2">
+                <input type="text" id="first-name" name="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div>
+              <label for="last-name" class="block text-sm/6 font-medium text-gray-700">Last name</label>
+              <div class="mt-2">
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label for="company" class="block text-sm/6 font-medium text-gray-700">Company</label>
+              <div class="mt-2">
+                <input type="text" name="company" id="company" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label for="address" class="block text-sm/6 font-medium text-gray-700">Address</label>
+              <div class="mt-2">
+                <input type="text" name="address" id="address" autocomplete="street-address" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label for="apartment" class="block text-sm/6 font-medium text-gray-700">Apartment, suite, etc.</label>
+              <div class="mt-2">
+                <input type="text" name="apartment" id="apartment" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div>
+              <label for="city" class="block text-sm/6 font-medium text-gray-700">City</label>
+              <div class="mt-2">
+                <input type="text" name="city" id="city" autocomplete="address-level2" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div>
+              <label for="country" class="block text-sm/6 font-medium text-gray-700">Country</label>
+              <div class="mt-2 grid grid-cols-1">
+                <select id="country" name="country" autocomplete="country-name" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-2 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Mexico</option>
+                </select>
+                <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                  <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+
+            <div>
+              <label for="region" class="block text-sm/6 font-medium text-gray-700">State / Province</label>
+              <div class="mt-2">
+                <input type="text" name="region" id="region" autocomplete="address-level1" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div>
+              <label for="postal-code" class="block text-sm/6 font-medium text-gray-700">Postal code</label>
+              <div class="mt-2">
+                <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label for="phone" class="block text-sm/6 font-medium text-gray-700">Phone</label>
+              <div class="mt-2">
+                <input type="text" name="phone" id="phone" autocomplete="tel" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Payment -->
+        <div class="mt-10 border-t border-gray-200 pt-10">
+          <h2 class="text-lg font-medium text-gray-900">Payment</h2>
+
+          <fieldset class="mt-4">
+            <legend class="sr-only">Payment type</legend>
+            <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+              <div class="flex items-center">
+                <input id="credit-card" name="payment-type" type="radio" checked class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden">
+                <label for="credit-card" class="ml-3 block text-sm/6 font-medium text-gray-700">Credit card</label>
+              </div>
+              <div class="flex items-center">
+                <input id="paypal" name="payment-type" type="radio" class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden">
+                <label for="paypal" class="ml-3 block text-sm/6 font-medium text-gray-700">PayPal</label>
+              </div>
+              <div class="flex items-center">
+                <input id="etransfer" name="payment-type" type="radio" class="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden">
+                <label for="etransfer" class="ml-3 block text-sm/6 font-medium text-gray-700">eTransfer</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="mt-6 grid grid-cols-4 gap-x-4 gap-y-6">
+            <div class="col-span-4">
+              <label for="card-number" class="block text-sm/6 font-medium text-gray-700">Card number</label>
+              <div class="mt-2">
+                <input type="text" id="card-number" name="card-number" autocomplete="cc-number" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div class="col-span-4">
+              <label for="name-on-card" class="block text-sm/6 font-medium text-gray-700">Name on card</label>
+              <div class="mt-2">
+                <input type="text" id="name-on-card" name="name-on-card" autocomplete="cc-name" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div class="col-span-3">
+              <label for="expiration-date" class="block text-sm/6 font-medium text-gray-700">Expiration date (MM/YY)</label>
+              <div class="mt-2">
+                <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+
+            <div>
+              <label for="cvc" class="block text-sm/6 font-medium text-gray-700">CVC</label>
+              <div class="mt-2">
+                <input type="text" name="cvc" id="cvc" autocomplete="csc" class="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order summary -->
+      <div class="mt-10 lg:mt-0">
+        <h2 class="text-lg font-medium text-gray-900">Order summary</h2>
+
+        <div class="mt-4 rounded-lg border border-gray-200 bg-white shadow-xs">
+          <h3 class="sr-only">Items in your cart</h3>
+          <ul role="list" class="divide-y divide-gray-200">
+            <li class="flex px-4 py-6 sm:px-6">
+              <div class="shrink-0">
+                <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/shopping-cart-page-01-product-02.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-20 rounded-md">
+              </div>
+
+              <div class="ml-6 flex flex-1 flex-col">
+                <div class="flex">
+                  <div class="min-w-0 flex-1">
+                    <h4 class="text-sm">
+                      <a href="#" class="font-medium text-gray-700 hover:text-gray-800">Basic Tee</a>
+                    </h4>
+                    <p class="mt-1 text-sm text-gray-500">Black</p>
+                  </div>
+
+                  <div class="ml-4 flow-root shrink-0">
+                    <button type="button" class="-m-2.5 flex items-center justify-center bg-white p-2.5 text-gray-400 hover:text-gray-500">
+                      <span class="sr-only">Remove</span>
+                      <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 0 0 6 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 1 0 .23 1.482l.149-.022.841 10.518A2.75 2.75 0 0 0 7.596 19h4.807a2.75 2.75 0 0 0 2.742-2.53l.841-10.52.149.023a.75.75 0 0 0 .23-1.482A41.03 41.03 0 0 0 14 4.193V3.75A2.75 2.75 0 0 0 11.25 1h-2.5ZM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4ZM8.58 7.72a.75.75 0 0 0-1.5.06l.3 7.5a.75.75 0 1 0 1.5-.06l-.3-7.5Zm4.34.06a.75.75 0 1 0-1.5-.06l-.3 7.5a.75.75 0 1 0 1.5.06l.3-7.5Z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="flex flex-1 items-end justify-between pt-2">
+                  <p class="mt-1 text-sm font-medium text-gray-900">$35</p>
+
+                  <div class="ml-4">
+                    <div class="grid grid-cols-1">
+                      <select id="quantity" name="quantity" aria-label="Quantity" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-2 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- More products... -->
+          </ul>
+          <dl class="space-y-6 border-t border-gray-200 px-4 py-6 sm:px-6">
+            <div class="flex items-center justify-between">
+              <dt class="text-sm">Subtotal</dt>
+              <dd class="text-sm font-medium text-gray-900">$35</dd>
+            </div>
+            <div class="flex items-center justify-between">
+              <dt class="text-sm">Shipping</dt>
+              <dd class="text-sm font-medium text-gray-900">$35</dd>
+            </div>
+            <div class="flex items-center justify-between">
+              <dt class="text-sm">Taxes</dt>
+              <dd class="text-sm font-medium text-gray-900">35</dd>
+            </div>
+            <div class="flex items-center justify-between border-t border-gray-200 pt-6">
+              <dt class="text-base font-medium">Total</dt>
+              <dd class="text-base font-medium text-gray-900">$105</dd>
+            </div>
+          </dl>
+
+          <div class="border-t border-gray-200 px-4 py-6 sm:px-6">
+            <a href="shoppng-history.html" 
+               class="block w-full rounded-md border-2 border-indigo-600 bg-indigo-600 px-4 py-3 text-base font-medium text-white shadow hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50">
+              Confirm order
+            </a>
+          </div>          
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!--end form chechout-->
+
+<!--cta-->
+<!--end cta-->
+
+<!--footer-->
+<footer class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 pb-8">
+      <div class="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+        <div class="flex gap-x-6 md:order-2">
+          <a href="#" class="text-gray-600 hover:text-gray-800">
+            <span class="sr-only">Facebook</span>
+            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">
+            <span class="sr-only">Instagram</span>
+            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">
+            <span class="sr-only">X</span>
+            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">
+            <span class="sr-only">GitHub</span>
+            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">
+            <span class="sr-only">YouTube</span>
+            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+        <p class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">&copy; 2025 Your Company, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+<!--end footer-->
+</body>
+</html>
