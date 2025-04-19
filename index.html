@@ -33,13 +33,14 @@
 <!--end banner-->
 
 <!--header-->
-<header class="relative isolate overflow-hidden bg-gray-800">
+<!--header-->
+<header class="relative isolate overflow-hidden bg-gray-800 z-50">
   <nav class="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="index.html" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company Logo">
-        </a>          
+        <span class="sr-only">Your Company</span>
+        <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company Logo">
+      </a>          
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
       <a href="index.html" class="text-sm/6 font-semibold text-blue-400">Home</a>
@@ -52,8 +53,7 @@
       <a href="register.html" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign up</a>
     </div>
     <div class="flex lg:hidden">
-      <!-- Button to open menu -->
-      <label for="menu-toggle" class="cursor-pointer p-2 text-gray-700 bg-gray-800 rounded-md">
+      <label for="menu-toggle" class="cursor-pointer p-2 text-gray-700 bg-gray-800 rounded-md z-50">
         <span class="sr-only">Open main menu</span>
         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -62,11 +62,10 @@
     </div>
   </nav>
 
-  <!-- Mobile menu with enhanced styles and smoother transitions -->
   <input type="checkbox" id="menu-toggle" class="peer hidden" />
-  <div class="fixed inset-0 z-10 bg-black/50 peer-checked:block hidden transition-opacity duration-300"></div>
+  <div class="fixed inset-0 z-40 bg-black/50 peer-checked:block hidden transition-opacity duration-300"></div>
   
-  <div class="fixed inset-y-0 right-0 z-20 w-64 max-w-full bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out">
+  <div class="fixed inset-y-0 right-0 z-50 w-64 max-w-full bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out">
     <div class="flex items-center gap-x-6">
       <a href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">Your Company</span>
@@ -84,9 +83,8 @@
       <div class="-my-6 divide-y divide-gray-500/10">
         <div class="space-y-2 py-6">
           <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
-          <a href="product.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+          <a href="product.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Shop</a>
           <a href="cart.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Cart</a>
-          <a href="checkout.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Checkout</a>
           <a href="shoppng-history.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Shopping History</a>
         </div>
         <div class="py-6">
@@ -104,10 +102,10 @@
   <!-- Background image and overlap -->
   <div aria-hidden="true" class="absolute inset-0 hidden sm:flex sm:flex-col">
     <div class="relative w-full flex-1">
-      <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden z-0">
         <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-04-hero-full-width.jpg" alt="" class="size-full object-cover">
       </div>
-      <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+      <div class="absolute inset-0 bg-gray-900 opacity-50 z-0"></div>
     </div>
     <div class="h-32 w-full bg-white md:h-40 lg:h-48"></div>
   </div>
@@ -195,7 +193,7 @@
       </div>
     </div>
   </section>
-</div>
+</div>  
 <!--end promo sections-->
 
 <!--basic product-->
